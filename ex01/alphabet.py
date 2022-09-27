@@ -1,5 +1,5 @@
-import random 
 import time
+import random 
 
 num_of_alphabet = 26
 num_of_all_chars = 10
