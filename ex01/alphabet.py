@@ -1,4 +1,4 @@
-import random
+import random 
 import time
 
 num_of_alphabet = 26
