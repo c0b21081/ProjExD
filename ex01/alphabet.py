@@ -12,7 +12,6 @@ def shutudai(alphabet):
     for c in sorted(all_chars): 
         print(c, end=" ")
     print()
-
     abs_chars = random.sample(all_chars, num_of_abs_chars)
     print("表示文字：", end="")
     for c in all_chars: 
@@ -21,7 +20,6 @@ def shutudai(alphabet):
     print()
     print("デバッグ用欠損文字：", abs_chars)
     return abs_chars
-
 
 def kaito(seikai):
     num = int(input("欠損文字はいくつあるでしょうか？："))
@@ -40,7 +38,6 @@ def kaito(seikai):
             print("欠損文字も含めて完全正解です！！！")
             return True
     return False
-
 
 if __name__ == "__main__":
     start = time.time()
