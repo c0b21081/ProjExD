@@ -19,10 +19,10 @@ def click_equal(event):
     
 root = tk.Tk()
 root.title("電卓")
-root.geometry("400x690")
+root.geometry("390x590")
 
-entry = tk.Entry(root, width = 10, font = (", 38"), bg = "blue", justify = "right")
-entry.grid(row = 0, column = 0, columnspan = 3)
+entry = tk.Entry(root, width = 10, font = (", 58"), bg = "blue", justify = "right")
+entry.grid(row = 0, column = 0, columnspan = 6)
 
 #ボタン
 r = 1
