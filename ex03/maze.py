@@ -2,11 +2,8 @@ import tkinter as tk
 #練習8
 import maze_maker as mm
 
-#1:パリピこうかとんの実装
 from random import randint
-#3:ゴールしました表示
 import tkinter.messagebox as tkm
-
 
 #練習5
 def key_down(event):
@@ -31,7 +28,6 @@ def main_proc():
         tkm.showinfo("Goal!", f"もう一回遊べるドン！！{tmr/10}秒かかりました")
         mx, my = 1, 1
         cx, cy = mx*100+50, my*100+50
-
     if key == "Up":
         my -= 1
     if key == "Down":
@@ -68,7 +64,6 @@ if __name__ == "__main__":
 
     root = tk.Tk()
     tmr = 0
-
 
     #練習１
     root.title("迷えるこうかとん")
