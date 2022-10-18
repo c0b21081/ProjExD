@@ -1,4 +1,6 @@
 import tkinter as tk
+#練習8
+import maze_maker as mm
 
 #練習5
 def key_down(event):
@@ -10,6 +12,7 @@ def key_up(event):
     global key
     key = ""
 
+#練習7
 def main_proc():
     global cx, cy
     if key == "Up":
@@ -23,6 +26,10 @@ def main_proc():
 
     canv.coords("tori", cx, cy)
     root.after(100, main_proc)
+
+#練習9
+maze_lst = mm.make_maze(15, 9)
+print(maze_lst)   #1:壁 0:床
 
 if __name__ == "__main__":
 
@@ -49,4 +56,9 @@ if __name__ == "__main__":
     
     #練習7
     main_proc()
+
+    #練習9,10
+    maze_lst = mm.make_maze(15, 9)
+    mm.show_maze(canv, maze_lst)
+
     root.mainloop()
