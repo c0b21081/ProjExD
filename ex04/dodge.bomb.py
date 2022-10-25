@@ -16,7 +16,7 @@ def check_bound(obj_rct, scr_rct):
     return yoko, tate
 
 def main():
-    pg.display.set_caption("初めてのPyGame")
+    pg.display.set_caption("逃げろ！こうかとん")
     scrn_sfc = pg.display.set_mode((1600, 900)) # 練習1
     scrn_rct = scrn_sfc.get_rect()
     bg_sfc = pg.image.load("fig/pg_bg.jpg")
