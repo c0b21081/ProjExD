@@ -133,6 +133,7 @@ class Alien(pg.sprite.Sprite):
         self.frame = self.frame + 1
         self.image = self.images[self.frame // self.animcycle % 3]
 
+
 class Explosion(pg.sprite.Sprite):
     """An explosion. Hopefully the Alien and not the player!"""
 
@@ -249,7 +250,7 @@ def main(winstyle=0):
     img = load_image("explosion1.gif")
     Explosion.images = [img, pg.transform.flip(img, 1, 1)]
     Alien.images = [load_image(im) for im in ("katayanagi.jpg", "souichiro.jpg", "kocho.jpg")]
-    # 左から順番に、「片柳鴻」、「松下　宗一郎」、「大山 恭弘」# 1
+    # 1:左から順番に、「片柳鴻」、「松下　宗一郎」、「大山 恭弘」
     Bomb.images = [load_image("redbook.png")] # 赤本
     Shot.images = [load_image("pen.png")] # ペン
 
